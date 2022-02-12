@@ -10,7 +10,9 @@ int main(void)
 int n;
 
 for (n = 97; n < 1232; n++)
+{
 putchar (n);
 putchar ('\n');
+}
 return (0);
 }
