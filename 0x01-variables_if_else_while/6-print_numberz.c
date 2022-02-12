@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - Imprime el alfabeto
+* main - 6. Numberz
 * Return: Always 0
 */
 
@@ -9,7 +9,7 @@ int main(void)
 {
 int n;
 
-for (n = 0; n <= 910; n++)
+for (n = 0; n <= 9; n++)
 putchar(n);
 putchar ('\n');
 return (0);
