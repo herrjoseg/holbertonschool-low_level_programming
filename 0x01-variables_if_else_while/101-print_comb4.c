@@ -19,14 +19,13 @@ for (o = m + 1; o <= 57; o++)
 putchar (n);
 putchar (m);
 putchar (o);
-if (n == 56 && m == 58 && o == 57)
+if (n == 55 && m == 56 && o == 57)
 continue;
 putchar (44);
 putchar (32);
 }
 }
 }
-
 putchar ('\n');
 return (0);
 }
