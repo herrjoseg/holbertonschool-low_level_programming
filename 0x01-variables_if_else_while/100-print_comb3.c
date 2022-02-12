@@ -15,10 +15,10 @@ for (m = n + 1; m <= 57; m++)
 {
 putchar (n);
 putchar (m);
-}
 putchar (44);
 putchar (32);
- }
+}
+}
 
 putchar ('\n');
 return (0);
