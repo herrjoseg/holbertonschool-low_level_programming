@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/**
+ * main - tests
+ * Return: Alway 0
+ */
+
+int main(void)
+{
+  int integer;
+  char character;
+  float floats;
+  double doubles;
+  long double ldoubles;
+  long int linteger;
+  unsigned short int yearold;
+
+  printf("integer: %lu\n", sizeof(integer));
+  printf("character: %lu\n", sizeof(character));
+  printf("floats: %lu\n", sizeof(floats));
+  printf("doubles: %lu\n", sizeof(doubles));
+  printf("unsigned short integer: %lu\n", sizeof(yearOld));
+
+  return (0);
+}

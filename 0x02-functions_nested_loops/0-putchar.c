@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
 * main - Imprime "_putchar"
@@ -7,17 +7,15 @@
 */
 
 int main(void)
+
 {
+char c[8] = "_putchar";
+int i = 0;
 
-putchar (95);
-putchar (112);
-putchar (117);
-putchar (116);
-putchar (99);
-putchar (104);
-putchar (97);
-putchar (114);
-putchar ('\n');
-
+for (i = 0; i < 8; i++)
+{
+_putchar(c[i]);
+_putchar('\n');
+}
 return (0);
 }
