@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+* main - Imprime "_putchar"
+* Return: Always 0
+*/
+
+int main(void)
+
+{
+char c[8] = "_putchar";
+int i = 0;
+
+for (i = 0; i < 8; i++)
+{
+_putchar(c[i]);
+}
+printf("position array %p\n", (void *)array);
+  printf("valor indice 0 es %d\n", array[0]);
+  printf("valor indice 1 es %d\n", array[1]);
+  printf("valor indice 2 es %d\n", array[2]);
+  printf("valor indice 3 es %d\n", array[3]);
+return (0);
+}
