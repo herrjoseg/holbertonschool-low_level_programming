@@ -1,24 +1,27 @@
 #include "main.h"
 /**
 * print_sign - checks for alphabetic character.
-* @c: Caracter a chek
-* Return: 1 if c is a letter, lowercase or uppercase
+* @n: Caracter a chek
+* Return: 1 if n is a greater 0, -1 if less 0, 0 = 0
 */
 
-int print_sign(int c)
+int print_sign(int n)
 {
 
-if (c >= 0)
+if (n > 0)
 {
 return (1);
+_putchar(43);
 }
-else if (c <= 0)
+else if (n < 0)
 {
 return (-1);
+_putchar(45);
 }
 else
 {
 return (0);
+_putchar(48);
 }
 
 }
