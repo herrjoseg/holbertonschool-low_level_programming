@@ -12,10 +12,21 @@ for (f = 0; f <= 9; f++)
 {
 for (c = 0; c <= 9; c++)
 {
+if ((c * f) >= 10)
+{
 _putchar((c * f) / 10 + 48);
 _putchar((c * f) % 10 + 48);
 _putchar(',');
 _putchar(' ');
+}
+else
+{
+_putchar(' ');
+_putchar((c * f) + 48);
+_putchar(',');
+_putchar(' ');
+ }
+
 }
 _putchar('\n');
 }
