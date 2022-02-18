@@ -1,48 +1,35 @@
 #include <stdio.h>
 
 /**
-* main - “Fizz-Buzz test”
-* Return: Always 0
-*/
-
+ * main -  checks for checks for a digit (0 through 9).
+ * Return: Always 0.
+ */
 int main(void)
 {
+int x;
 
-int i, k, l;
-char f[4] = "Fizz";
-char b[4] = "Buzz";
-
-for (i = 1; i <= 100; i++)
+for (x = 1; x <= 100; x++)
 {
-if ((i % 3) == 0 && (i % 5) == 0)
+if (x % 3 == 0 || x % 5 == 0)
 {
-for (k = 0; k <= 3; k++)
-putchar(f[k]);
-for (l = 0; l <= 3; l++)
-putchar(b[l]);
-putchar(' ');
+if (x % 3 == 0)
+{
+printf("Fizz");
+}
+if (x % 5 == 0)
+{
+printf("Buzz");
+}
 }
 else
 {
-if ((i % 3) == 0)
+printf("%d", x);
+}
+if (x != 100)
 {
-for (k = 0; k <= 3; k++)
-putchar(f[k]);
-putchar(' ');
-}
-else if ((i % 5) == 0)
-{
-for (l = 0; l <= 3; l++)
-putchar(b[l]);
-putchar(' ');
-}
-else
-{
-printf("%d", i);
 putchar(' ');
 }
 }
-putchar(' ');
-}
+putchar('\n');
 return (0);
 }
