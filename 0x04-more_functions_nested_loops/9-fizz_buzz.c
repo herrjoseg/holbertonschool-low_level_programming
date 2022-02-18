@@ -38,8 +38,7 @@ putchar(' ');
 }
 else
 {
-putchar((i / 10) + 48);
-putchar((i % 10) + 48);
+printf("%d", i);
 putchar(' ');
 }
 }
