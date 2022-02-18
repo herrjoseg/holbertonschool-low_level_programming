@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
 * main - “Fizz-Buzz test”
+* Return: Always 0
 */
 
-void main(void)
+int main(void)
 {
 
 int i, k, l;
@@ -17,32 +17,33 @@ for (i = 1; i <= 100; i++)
 if ((i % 3) == 0 && (i % 5) == 0)
 {
 for (k = 0; k <= 3; k++)
-_putchar(f[k]);
+putchar(f[k]);
 for (l = 0; l <= 3; l++)
-_putchar(b[l]);
-_putchar(' ');
+putchar(b[l]);
+putchar(' ');
 }
 else
 {
 if ((i % 3) == 0)
 {
 for (k = 0; k <= 3; k++)
-_putchar(f[k]);
-_putchar(' ');
+putchar(f[k]);
+putchar(' ');
 }
 else if ((i % 5) == 0)
 {
 for (l = 0; l <= 3; l++)
-_putchar(b[l]);
-_putchar(' ');
+putchar(b[l]);
+putchar(' ');
 }
 else
 {
-_putchar((i / 10) + 48);
-_putchar((i % 10) + 48);
-_putchar(' ');
+putchar((i / 10) + 48);
+putchar((i % 10) + 48);
+putchar(' ');
 }
 }
+putchar(' ');
 }
-
+return (0);
 }
