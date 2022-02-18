@@ -1,17 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
 * mul - Producto de dos variables
-* @a: varriable a
+* @a: variable a
 * @b: variable b
-* Return: num es el prodcuto de a * b
+* Return: mul
 */
 
-int mul(int a, int b);
+int mul(int a, int b)
 {
 
-int num;
-num=(a * b);
-return (num);
+int mul;
+
+mul = a * b;
+ 
+return (mul);
 }
